@@ -256,7 +256,7 @@
 /* *************** */
 
 #es-loreal.es-loreal .es-results {
-  background: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/es-results-bg.png');
+  background: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524122942/img/es-results-bg.png');
   padding-bottom: 32px;
 }
 
@@ -541,7 +541,7 @@
   [type='radio']:nth-of-type(1):checked
   ~ .es-tab-content:nth-of-type(1) {
   background-color: var(--color-light);
-  background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/tab1-bg.png');
+  background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524122942/img/tab1-bg.png');
   background-size: 150%;
 }
 
@@ -560,7 +560,7 @@
     #e8f4f5 0%,
     #31a1aa 100%
   );
-  background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/tab2-bg.png');
+  background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524122942/img/tab2-bg.png');
   background-size: cover;
   background-position: center;
 }
@@ -570,7 +570,7 @@
   [type='radio']:nth-of-type(3):checked
   ~ .es-tab-content:nth-of-type(3) {
   background-color: var(--color-light);
-  background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/tab3-bg.png');
+  background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524122942/img/tab3-bg.png');
   background-size: cover;
   background-position: left;
   display: -webkit-box;
@@ -897,7 +897,7 @@
 }
 
 #es-loreal.es-loreal .es-use {
-  background: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/bg-serum.png');
+  background: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524122942/img/bg-serum.png');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100% 100%;
@@ -1345,7 +1345,7 @@
   }
 
   #es-loreal.es-loreal .es-routine {
-    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/es-routine-bg.png');
+    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524122942/img/es-routine-bg.png');
     height: 870px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1777,7 +1777,7 @@
     right: -4%;
     width: 220px;
     height: 220px;
-    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/beads-1.png');
+    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524122942/img/beads-1.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
@@ -1791,7 +1791,7 @@
     right: -4%;
     width: 220px;
     height: 220px;
-    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/beads-2.png');
+    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524122942/img/beads-2.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
