@@ -71,8 +71,10 @@
   text-align: center;
   font-size: 30px;
   font-weight: 900;
+}
 
-  @media (min-width: 425px) {
+@media (min-width: 425px) {
+  #es-loreal.es-loreal .es-kv__title {
     padding: 32px;
   }
 }
@@ -349,7 +351,7 @@
 }
 
 #es-loreal.es-loreal .es-results__BA-group--number {
-  font-size: 40px;
+  font-size: 46px;
   font-weight: 900;
 }
 
@@ -367,8 +369,11 @@
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 0;
+}
 
-  @media (min-width: 425px) {
+@media (min-width: 425px) {
+  #es-loreal.es-loreal .es-results__BA--przed,
+  #es-loreal.es-loreal .es-results__BA--po {
     top: 1%;
   }
 }
@@ -397,8 +402,10 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 16px;
+}
 
-  @media (min-width: 425px) {
+@media (min-width: 425px) {
+  #es-loreal.es-loreal .es-results__BA--imgCtn {
     padding: 32px;
   }
 }
@@ -1297,6 +1304,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  #es-loreal.es-loreal .es-slider__slide1--img {
+    display: block;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 20%;
+  }
   #es-loreal.es-loreal .es-kv__photo--desktop {
     display: block;
   }
@@ -1757,7 +1770,7 @@
     padding: 32px 78px;
   }
 
-  #es-loreal.es-loreal .es-slider__wrapper::after {
+  #es-loreal.es-loreal .es-slider__wrapper.background-1::after {
     content: '';
     position: absolute;
     bottom: -25%;
@@ -1768,7 +1781,20 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
-    -webkit-animation: pulse 5s infinite;
+    animation: pulse 5s infinite;
+  }
+
+  #es-loreal.es-loreal .es-slider__wrapper.background-2::after {
+    content: '';
+    position: absolute;
+    bottom: -25%;
+    right: -4%;
+    width: 220px;
+    height: 220px;
+    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/beads-2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
     animation: pulse 5s infinite;
   }
 

@@ -12,7 +12,6 @@
   rel="stylesheet"
   href="https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/css/style.css"
 />
-
 <div class="es-loreal" id="es-loreal">
   <section class="es-kv">
     <div class="es-kv__logo">
@@ -152,7 +151,7 @@
         <div class="es-tab1--item">
           <p>
             <strong>PO 3 TYGODNIACH</strong>
-            REDUKCJA WSZYTKICH <br />
+            REDUKCJA WSZYSTKICH <br />
             RODZAJÓW PRZEBARWIEŃ
           </p>
         </div>
@@ -169,7 +168,7 @@
           <p>
             <strong
               >[25% KWASÓW <br />
-              [AHA + BHA + PHA]]</strong
+              [AHA + BHA + PHA]</strong
             >
             POMAGAJĄ ZWĘZIĆ PORY <br />
             i ZREDUKOWAĆ <br />NIEDOSKONAŁOŚCI
@@ -179,7 +178,7 @@
 
       <div class="es-tab-content es-tab-content--3">
         <p class="es-tab__main--title">
-          odpowiednie nawet <strong>dla skóry wrażliwej</strong>
+          odpowiedni nawet <strong>dla skóry wrażliwej</strong>
         </p>
         <p class="es-tab__main--title">
           <strong> 90% KOBIET POTWIERDZA,</strong>
@@ -234,7 +233,7 @@
       <div class="es-slider__wrapper">
         <div class="es-slider__content">
           <div class="swiper swiper1">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper background-1">
               <div class="swiper-slide">
                 <div class="es-slider__slide es-slider__slide--1">
                   <div class="es-slider__slide1__imgCtn">
@@ -246,6 +245,7 @@
                   <div class="es-slider__slide1__rightCtn">
                     <div class="es-slider__slide1__img--bottom">
                       <img
+                        class="es-slider__slide1--img"
                         src="https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/wizaz_ocena.png"
                         alt="wizaż PL: 4.9 na 5 gwiazdek, na 442 recenzje"
                       />
@@ -421,6 +421,31 @@
                 <div class="es-cross__item">
                   <div class="es-cross__img">
                     <img
+                      src="https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/cross-4.png"
+                    />
+                  </div>
+                  <div class="es-cross__info">
+                    <p class="es-cross__series-name">Bright reveal</p>
+                    <p class="es-cross__prod-name">serum</p>
+                    <p class="es-cross__prod-desc">
+                      Redukuje wszystkie rodzaje <br />przebarwień (w tym:
+                      potrądzikowe,<br />
+                      posłoneczne, związane z wiekiem)
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="https://www.rossmann.pl/Produkt/Serum-boostery-i-esencje/LOreal-Paris-Bright-Reveal-serum-do-twarzy-na-przebarwienia-10-Niacynamid-Kwas-Aminosukfonowy-30-,2076997,13051"
+                  target="_blank"
+                  class="es-cross__link"
+                  >Kup teraz</a
+                >
+              </div>
+
+              <div class="swiper-slide es-slider2__slide">
+                <div class="es-cross__item">
+                  <div class="es-cross__img">
+                    <img
                       src="https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/cross-2.png"
                     />
                   </div>
@@ -461,31 +486,6 @@
                 </div>
                 <a
                   href="https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Bright-Reveal-krem-do-twarzy-nawilzajacy-redukujacy-przebarwienia-z-SPF50-50-ml,2076994,13049"
-                  target="_blank"
-                  class="es-cross__link"
-                  >Kup teraz</a
-                >
-              </div>
-
-              <div class="swiper-slide es-slider2__slide">
-                <div class="es-cross__item">
-                  <div class="es-cross__img">
-                    <img
-                      src="https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/img/cross-4.png"
-                    />
-                  </div>
-                  <div class="es-cross__info">
-                    <p class="es-cross__series-name">Bright reveal</p>
-                    <p class="es-cross__prod-name">serum</p>
-                    <p class="es-cross__prod-desc">
-                      Redukuje wszystkie rodzaje <br />przebarwień (w tym:
-                      potrądzikowe,<br />
-                      posłoneczne, związane z wiekiem)
-                    </p>
-                  </div>
-                </div>
-                <a
-                  href="https://www.rossmann.pl/Produkt/Serum-boostery-i-esencje/LOreal-Paris-Bright-Reveal-serum-do-twarzy-na-przebarwienia-10-Niacynamid-Kwas-Aminosukfonowy-30-,2076997,13051"
                   target="_blank"
                   class="es-cross__link"
                   >Kup teraz</a
@@ -577,6 +577,35 @@
 </div>
 <script src="https://www.ros.net.pl/Portals/0/rich-content/loreal/bright-reveal-peeling/js/slider.js"></script>
 <script>
+  // Pobierz element wrappera
+  const sliderWrapper = document.querySelector(
+    '#es-loreal.es-loreal .es-slider__wrapper',
+  );
+
+  function updateBackground() {
+    setTimeout(() => {
+      const activeSlide = document.querySelector('.swiper-slide-active');
+
+      if (activeSlide) {
+        const innerSlide = activeSlide.querySelector('.es-slider__slide');
+
+        if (innerSlide) {
+          if (innerSlide.classList.contains('es-slider__slide--2')) {
+            sliderWrapper.classList.remove('background-1');
+            sliderWrapper.classList.add('background-2');
+          } else {
+            sliderWrapper.classList.remove('background-2');
+            sliderWrapper.classList.add('background-1');
+          }
+        } else {
+          // console.log('No inner slide found');
+        }
+      } else {
+        // console.log('No active slide found');
+      }
+    }, 100); // Opóźnienie 100 ms
+  }
+
   const swiper = new Swiper('.swiper1', {
     loop: true,
     autoHeight: false,
@@ -589,6 +618,19 @@
       el: '.swiper1-pagination',
       clickable: true,
     },
+
+    on: {
+      init: updateBackground, // Wywołaj funkcję po inicjalizacji
+      slideChange: updateBackground, // Wywołuj funkcję przy każdej zmianie slajdu
+    },
+  });
+
+  swiper.on('init', function () {
+    updateBackground();
+  });
+
+  swiper.on('slideChange', function () {
+    updateBackground();
   });
   const swiper2 = new Swiper('.swiper2', {
     loop: true,
