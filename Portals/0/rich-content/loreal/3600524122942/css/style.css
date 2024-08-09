@@ -344,7 +344,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   -webkit-column-gap: 5px;
   -moz-column-gap: 5px;
   column-gap: 5px;
@@ -1304,9 +1304,15 @@
 }
 
 @media screen and (min-width: 768px) {
+  #es-loreal.es-loreal .es-results__BA-group--number {
+    font-size: 53px;
+  }
+  #es-loreal.es-loreal .es-results__BA-group--text {
+    font-size: 20px;
+  }
   #es-loreal.es-loreal .es-slider__slide1--img {
     display: block;
-    max-width: 80%;
+    max-width: 100%;
     margin-left: 10%;
     margin-top: 20%;
   }
@@ -1777,7 +1783,7 @@
     right: -4%;
     width: 220px;
     height: 220px;
-    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524122942/img/beads-1.png');
+    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524122942/img/beads-2.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
